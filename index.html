@@ -1,32 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>sample</title>
+    <title>Otherside</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@300;500;900&family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
     <nav>
-        <a href="#">Slime <sub>Slayer</sub></a>
-        <button class="nav__burger" title="burger button">
+        <a href="#begin">
+            <picture>
+                <source media="(min-width: 800px)" srcset="./assets/images/Otherside-logo.png">
+                <img src="./assets/images/logo.png" alt="">
+            </picture>
+        </a>
+        <ul class="nav__desktop">
+            <li><a href="#begin">Inicio</a></li>
+            <li><a href="#about-us">Acerca de</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button id="burger-button" class="nav__burger" title="burger button">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </nav>
+    <header id="begin" class="header-welcome">
+        <h1 class="header-welcome__title">Otherside Spear Bash</h1>
+        <div>
+            <h2 class="header-welcome__subtitle">Comienza tu aventura</h2>
+            <p class="header-welcome__information">Emprende un viaje en las maravillosas tierras de Olivespire</p>
+            <a href="#story" class="btn btn--primary btn--block btn--margin-left btn--fit-content">Ver Más</a>
+        </div>
+        <div class="header-welcome__contact">
+            <a href="https://www.facebook.com/profile.php?id=100090822633813">
+                <img src="./assets/icons/square-facebook.svg" alt="">
+            </a>
+            <a href="mailto:lan.studios.games@gmail.com">
+                <img src="./assets/icons/envelope-solid.svg" alt="">
+            </a>
+        </div>
+    </header>
     <main>
-        <h1>Slime Slayer</h1>
-        <section>
-            <h2>Sinopsis</h2>
-            <p></p>
+        <section class="content-section">
+            <figure class="content-section__image">
+                <img src="./assets/images/village-reference.PNG" alt="">
+            </figure>
+            <div>
+                <h2>Sinopsis</h2>
+                <p>El padre de Azalea y varios habitantes de Olivespire desaparecieron en el bosque así que Azalea decide salir en su búsqueda, enfrentándose a las hostilidades del bosque. </p>
+            </div>
         </section>
-        <section></section>
+        <section class="content-section content-section--left">
+            <figure class="content-section__image">
+                <img src="./assets/images/village-reference.PNG" alt="">
+            </figure>
+            <div>
+                <h2>Disfruta de un mundo medieval de fantasía en 3D</h2>
+                <p>El mundo de Otherside es un mundo vivído, con una hermosa y detallada aldea que te invita a disfrutar de sus arcaicas calles, calles que muestran los cimientos de properidad y calma, la aldea se encuentra plagada de hermosas casas rústicas. 
+                <br>
+                <br>
+                Olivespire está rodeado por un bosque rebosantes de frondosos áboles y una variedad única de flora pero, también está habitada por aberrantes slimes</p>
+            </div>
+        </section>
+        <section id="story" class="content-section">
+            <div>
+                <h2>Historia</h2>
+                <p>
+                    El pueblo empieza a recibir ataques constantes de las criaturas del bosque. 
+                    El padre de Azalea entre otros, desaparecen en el bosque por la noche. 
+                    Azalea ignora las ordenes de su superior y se lanza en búsqueda de su padre y los demás. 
+                    Azalea descubre que unas fluctuaciones de mana son el motivo de la hostilidad de las criaturas. 
+                    A medida que se adentra el follaje es más gris y seco. 
+                    Ella encuentra a los habitantes desaparecidos y al responsable de ello. 
+                    Lo derrota y regresa victoriosa al pueblo. 
+                </p>
+            </div>
+        </section>
+        <section class="content-section">
+            <figure class="content-section__image">
+                <img src="./assets/images/village-reference-2.PNG" alt="">
+            </figure>
+            <div>
+                <h2>Usa tus habilidades</h2>
+                <p>Usa el poder de tu espada para liberar al pueblo de Olivespire de las malvadas criaturas del bosque</p>
+                <ul>
+                    <li>Sumergete en un mundo medieval fantástico</li>
+                    <li>Derrota temibles enemigos</li>
+                    <li>Salva a la gente secuestrada</li>
+                    <li>Demuestra tu valía</li>
+                </ul>
+            </div>
+        </section>
+        <section class="content-section content-section--padding">
+            <h2>Disponible el 15 de Junio de 2023</h2>
+            <div class="content-section__gallery">
+                <img src="./assets/images/steam-logo.png" alt="">
+                <img src="./assets/images/Nintendo-Switch-Logo.png" alt="">
+                <img src="./assets/images/xbox-logo.png" alt="">
+                <img src="./assets/images/playstation-logo.png" alt="">
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <aside id="wrapper" class="inactive wrapper">
+        <section id="mobile-menu" class="inactive wrapper__aside">
+            <ul>
+                <li><a href="#begin">Inicio</a></li>
+                <li><a href="#about-us">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </section>
+    </aside>
+    <footer class="content-team">
+       <section>
+            <h2 id="about-us">Lan Studios</h2>
+            <p>
+                Otherside Spear Bash está siendo desarrollado por Lan Studios en Monterrey, Nuevo León. Somos un equipo de dos personas que desarrollan videojuegos, son responsables del desarrollo de esta página, la narrativa de nuestros juegos, el desarrollo de juegos, publicando actualizaciones de proyectos. Somos un pequeño equipo que hace las cosas con amor y esmero, disfrutamos el desarrollo y nos hace feliz poder hacer lo que nos gusta. 
+            </p>
+            <div class="content-team__members">
+                <figure class="content-team__member">
+                    <img src="./assets/images/mohidan.png" alt="">
+                    <figcaption>
+                        <h3>Alan Aldana</h3>
+                        <p>Es el director del estudio, responsable por el diseño de niveles, entornos, programación de mecánicas y es quien le da rumbo al juego</p>
+                    </figcaption>
+                </figure>
+                <figure class="content-team__member">
+                    <img src="./assets/images/Once.jpg" alt="">
+                    <figcaption>
+                        <h3>Irving Saenz</h3>
+                        <p>Es responsable por el modelado en 3D, creación de particulas, diseño de UI y programación de IA para enemigos. Crea muchos bugs, es su culpa</p>
+                    </figcaption>
+                </figure>
+            </div>
+       </section>
+       <section>
+        <h2 id="contact">Contacto</h2>
+       <div class="contact__icons">
+        <div >
+            
+            <a class="contact__icon" href="">
+                <img src="./assets/icons/square-facebook.svg" alt="">
+            </a>
+            <p>
+                Para más actualizaciones no olvides seguirnos en facebook
+            </p>
+        </div>
+        <div>
+            <a class="contact__icon" href="mailto:lan.studios.games@gmail.com">
+                <img src="./assets/icons/envelope-solid.svg" alt="">
+            </a>
+            <p>Si gustas hacernos una sugerencia no dudes en escribirnos en</p>
+        </div>
+       </div>
+        
+        </section>
+       <small>Todos los derechos reservados para Lan Studios</small>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
